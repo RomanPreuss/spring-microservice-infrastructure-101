@@ -8,6 +8,13 @@ This project consists of the following projects:
 * Helloservice
 * Eureka
 
+**Further information:**
+
+* https://github.com/kbastani/spring-cloud-microservice-example
+* https://github.com/livelessons-spring/building-microservices
+* https://github.com/rohitghatol/spring-boot-microservices
+* [Monitoring Microservices](http://www.informit.com/articles/article.aspx?p=2437436)
+
 ## Timeservice
 A simple service providing a `/time` endpoint returning the current time.
 

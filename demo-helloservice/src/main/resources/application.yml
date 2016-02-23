@@ -1,2 +1,8 @@
 server:
   port: 8081
+
+time-service:
+  ribbon:
+    DeploymentContextBasedVipAddresses: time-service
+    ReadTimeout: 5000
+    MaxAutoRetries: 2
