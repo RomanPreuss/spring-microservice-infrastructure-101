@@ -1,3 +1,12 @@
 server:
   port: 8989
 
+info:
+  component: Turbine
+
+turbine:
+  clusterNameExpression: new String("default")
+  appConfig: hello-service,time-service
+
+management:
+  port: 8990

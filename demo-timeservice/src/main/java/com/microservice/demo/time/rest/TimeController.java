@@ -25,7 +25,7 @@ public class TimeController {
     @ResponseStatus(HttpStatus.OK)
     public String getCurrentTime(HttpServletRequest request, HttpServletResponse response) {
         
-        return timeService.getCurrentTime();
+        return timeService.getTime();
     }
 	
 }
