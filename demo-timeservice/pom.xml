@@ -26,6 +26,18 @@
 		</plugins>
 	</build>
 	
+	<dependencyManagement>
+	    <dependencies>
+	        <dependency>
+	            <groupId>org.springframework.cloud</groupId>
+	            <artifactId>spring-cloud-netflix</artifactId>
+	            <version>1.0.7.RELEASE</version>
+	            <type>pom</type>
+	            <scope>import</scope>
+	        </dependency>
+	    </dependencies>
+	</dependencyManagement>
+	
 	<dependencies>
 		<!-- Spring stuff -->
 		<dependency>
@@ -34,10 +46,16 @@
 		</dependency>
 
 		<!-- web development, including Tomcat and spring-webmvc -->
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
+	    <dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-web</artifactId>
+	    </dependency>
+    
+    	<!-- Eureka -->
+    	<dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
 
 	</dependencies>
 </project>
