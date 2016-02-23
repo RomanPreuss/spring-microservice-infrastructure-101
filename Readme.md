@@ -7,6 +7,7 @@ This project consists of the following projects:
 * Timeservice
 * Helloservice
 * Eureka
+* Hystrix Monitor
 
 **Further information:**
 
@@ -39,6 +40,9 @@ The `Helloservice` uses [Feign](https://github.com/Netflix/feign) to communicate
     Feign abstracts the Rest Client and Unmarshalling of JSON objects.
     
 See `Timeclient.java` for declaration and `HelloService.java` for usage. NOTE: Do not forget to add `@EnableFeignClients` and `@EnableEurekaClient` to the application class. To determine the correct service in the `Timeclient` class Eureka is used to discover the `time-service` (the `spring.application.name` name of the `timeservice`)
+
+# Latency and fault tolerance + Monitoring
+Hystrix is a latency and fault tolerance library designed to isolate points of access to remote systems, services and 3rd party libraries, stop cascading failure and enable resilience in complex distributed systems where failure is inevitable.
 
 # Configuration
 There are two configuration files:

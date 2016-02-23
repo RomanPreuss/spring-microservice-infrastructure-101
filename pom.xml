@@ -17,6 +17,7 @@
         <module>demo-timeservice</module>
         <module>demo-helloservice</module>
         <module>demo-eureka</module>
+        <module>demo-monitor</module>
     </modules>
 
 </project>

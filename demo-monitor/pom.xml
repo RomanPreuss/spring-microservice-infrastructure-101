@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>demo-timeservice</artifactId>
+	<artifactId>demo-monitor</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -25,7 +25,7 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<dependencyManagement>
 	    <dependencies>
 	        <dependency>
@@ -37,30 +37,23 @@
 	        </dependency>
 	    </dependencies>
 	</dependencyManagement>
-	
-	<dependencies>
-		<!-- Spring stuff -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
 
-		<!-- web development, including Tomcat and spring-webmvc -->
-	    <dependency>
-	        <groupId>org.springframework.boot</groupId>
-	        <artifactId>spring-boot-starter-web</artifactId>
-	    </dependency>
-    
-    	<!-- Eureka -->
+	<dependencies>
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-actuator</artifactId>
+        </dependency>
+        
+		<!-- Hystrix -->
+		<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+		</dependency>
+		
+		<!-- Eureka -->
     	<dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
-
-		<!-- For detailed actuators -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-actuator</artifactId>
-        </dependency>
-	</dependencies>
+    </dependencies>
 </project>
