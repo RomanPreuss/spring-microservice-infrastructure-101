@@ -1,0 +1,6 @@
+server:
+  port: 8081
+# Spring properties
+spring:
+  application:
+     name: time-service

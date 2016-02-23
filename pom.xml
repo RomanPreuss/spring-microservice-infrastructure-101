@@ -15,6 +15,7 @@
 
     <modules>
         <module>demo-timeservice</module>
+        <module>demo-helloservice</module>
     </modules>
 
 </project>
