@@ -8,6 +8,7 @@ This project consists of the following projects:
 * Helloservice
 * Eureka
 * Hystrix Monitor
+* Zuul Routing
 
 **Further information:**
 
@@ -15,6 +16,7 @@ This project consists of the following projects:
 * https://github.com/livelessons-spring/building-microservices
 * https://github.com/rohitghatol/spring-boot-microservices
 * [Monitoring Microservices](http://www.informit.com/articles/article.aspx?p=2437436)
+* [Zuul at Netflix](https://github.com/Netflix/zuul/wiki/How-We-Use-Zuul-At-Netflix)
 
 ## Timeservice
 A simple service providing a `/time` endpoint returning the current time.

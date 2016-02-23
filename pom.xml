@@ -18,6 +18,7 @@
         <module>demo-helloservice</module>
         <module>demo-eureka</module>
         <module>demo-monitor</module>
+        <module>demo-zuul</module>
     </modules>
 
 </project>
